@@ -1,0 +1,17 @@
+---
+export const prerender = false;
+import { getAuthenticatedUser } from "../utils/auth.js";
+
+const user = getAuthenticatedUser(Astro.request);
+
+if (!user) {
+  return Astro.redirect("/ingresar");
+}
+
+if (user.rol !== "admin") {
+  return Astro.redirect("/");
+}
+---
+
+<h1>Página protegida</h1>
+<p>Bienvenido, {user.nombre}!</p>

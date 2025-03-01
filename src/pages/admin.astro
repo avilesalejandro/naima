@@ -1,0 +1,14 @@
+---
+export const prerender = false;
+import RegisterForm from "../components/RegisterForm.astro";
+import { getAuthenticatedUser } from "../utils/auth.js";
+
+const user = getAuthenticatedUser(Astro.request);
+
+if (!user || user.rol !== "admin") {
+  return Astro.redirect("/");
+}
+---
+
+<h1>Panel de administración</h1>
+<RegisterForm />

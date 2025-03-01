@@ -1,0 +1,67 @@
+---
+import { verifyUser, setAuthCookie } from "../utils/auth.js";
+import db from "../utils/db.js";
+
+let errorMessage = "";
+
+if (Astro.request.method === "POST") {
+  const formData = await Astro.request.formData();
+  const nombre = formData.get("nombre");
+  const contrasena = formData.get("contrasena");
+
+  const user = await db
+    .prepare("SELECT * FROM usuarios WHERE nombre = ?")
+    .get(nombre);
+
+  try {
+    if (await verifyUser(nombre, contrasena)) {
+      setAuthCookie(Astro.response, nombre, user.rol);
+      return Astro.redirect("/curso-1");
+    } else {
+      errorMessage = "Nombre o contraseña incorrectos";
+    }
+  } catch (error) {
+    errorMessage = error.message; // Obtiene el mensaje de error
+  }
+}
+---
+
+{errorMessage && <p style="color: red;">{errorMessage}</p>}
+
+<form
+  method="post"
+  enctype="application/x-www-form-urlencoded"
+  class="mx-auto p-6 rounded-md shadow-md flex flex-col"
+>
+  <div class="mb-4">
+    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2"
+      >Nombre:</label
+    >
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      required
+      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+    />
+  </div>
+  <div class="mb-6">
+    <label for="contrasena" class="block text-gray-700 text-sm font-bold mb-2"
+      >Contraseña:</label
+    >
+    <input
+      type="password"
+      name="contrasena"
+      id="contrasena"
+      required
+      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+    />
+  </div>
+  <div class="flex items-center justify-end">
+    <button
+      type="submit"
+      class="bg-sky-800 hover:bg-sky-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >Iniciar Sesión</button
+    >
+  </div>
+</form>

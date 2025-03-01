@@ -1,0 +1,16 @@
+---
+export const prerender = false;
+import Layout from "../layouts/Layout.astro";
+import LoginForm from "../components/LoginForm.astro";
+---
+
+<Layout>
+  <section class="w-full py-20">
+    <div class="lg:w-1/4 w-full mx-auto">
+      <h1 class="mb-12 text-center text-2xl font-bold text-sky-800">
+        Iniciar Sesión en NÄĪMA
+      </h1>
+      <LoginForm />
+    </div>
+  </section>
+</Layout>
