@@ -1,6 +1,5 @@
 ---
-export const prerender = false;
-import { getAuthenticatedUser } from "../utils/auth.js";
+import { getAuthenticatedUser } from "../../utils/auth.js";
 
 const user = getAuthenticatedUser(Astro.request);
 

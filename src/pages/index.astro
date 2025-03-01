@@ -2,12 +2,23 @@
 import Layout from "../layouts/Layout.astro";
 import { createAdminUser } from "../utils/auth.js";
 await createAdminUser(); // Llama a la función aquí
+
+import { Image } from "astro:assets";
+import FotoCurso from "../assets/fotoCurso.jpeg";
 ---
 
 <Layout>
   <main class="py-40">
-    <h1 class="text-center text-sky-900 text-3xl font-black">
-      Página de inicio
-    </h1>
+    <section class="">
+      <!-- TODO: Agregar aqui video promocional de cursos -->
+    </section>
+    <section class="flex flex-col gap-y-6">
+      <h3 class="text-2xl md:text-4xl font-semibold">Nuestros Cursos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <a href="/cursos/resina">Curso Resina</a>
+        <a href="/cursos/resina">Curso Resina</a>
+        <a href="/cursos/resina">Curso Resina</a>
+      </div>
+    </section>
   </main>
 </Layout>
