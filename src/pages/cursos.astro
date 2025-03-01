@@ -1,19 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import ImagenCursoResina from "../assets/FotoCursoResina.jpeg";
+import ImagenCursoResina from "../assets/FotoCursoResina.jpg";
 ---
 
 <Layout>
-  <main class="py-40">
-    <section class="flex flex-col gap-y-6">
+  <main class="py-20">
+    <section class="flex flex-col gap-y-6 w-11/12 mx-auto">
       <h3 class="text-2xl md:text-4xl font-semibold">Nuestros Cursos</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <a href="/cursos/resina">
-          <Image src={} alt="" class="" />
-          <h5>Curso de resina UV</h5>
-          <p>Aprende a crear piezas únicas de resina UV con nuestro curso</p>
-          <p>Ir al curso</p>
+        <a href="/cursos/resina" class="shadow-md rounded-lg">
+          <Image
+            src={ImagenCursoResina}
+            alt="Foto del curso Resina UV"
+            class="rounded-t-xl"
+          />
+          <div class="p-3 flex flex-col gap-3">
+            <h5 class="text-xl font-black">Curso de resina UV</h5>
+            <p>Aprende a crear piezas únicas de resina UV con nuestro curso</p>
+            <p class="hover:underline">Ir al curso</p>
+          </div>
         </a>
         <a href="/cursos/resina">Curso Resina</a>
         <a href="/cursos/resina">Curso Resina</a>

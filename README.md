@@ -1,49 +1,98 @@
-# Astro Starter Kit: Basics
+# Proyecto Astro con Autenticación
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto es una aplicación web construida con Astro, que incluye un sistema de autenticación de usuarios con roles (administrador y usuario).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tecnologías Utilizadas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro:** Un framework web para construir sitios web rápidos con Islands Architecture.
+- **Tailwind CSS:** Un framework de CSS para un diseño rápido y responsivo.
+- **bcryptjs:** Para el cifrado seguro de contraseñas.
+- **cookie:** Para manejar cookies de autenticación.
+- **SQLite:** Base de datos para almacenar información de usuarios.
+- **Node.js:** Entorno de ejecución para el renderizado del lado del servidor (SSR).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características
 
-## 🚀 Project Structure
+- **Registro de usuarios:** Los usuarios pueden registrarse con un nombre de usuario, contraseña y rol (usuario o administrador).
+- **Inicio de sesión:** Los usuarios pueden iniciar sesión con su nombre de usuario y contraseña.
+- **Autenticación basada en roles:** Los usuarios con el rol de administrador tienen acceso a páginas protegidas.
+- **Renderizado del lado del servidor (SSR):** Para un mejor rendimiento y SEO.
+- **Página protegida:** Solo accesible para administradores.
+- **Manejo de errores:** Se muestran mensajes de error en pantalla para facilitar la depuración.
+- **Estilos con Tailwind CSS:** Interfaz de usuario moderna y responsiva.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Configuración
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1.  **Clona el repositorio:**
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    cd <NOMBRE_DEL_PROYECTO>
+    ```
 
-## 🧞 Commands
+2.  **Instala las dependencias:**
 
-All commands are run from the root of the project, from a terminal:
+    ```bash
+    npm install
+    ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+    o
 
-## 👀 Want to learn more?
+    ```bash
+    yarn install
+    ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# naima
+3.  **Configura la base de datos:**
+
+    - Asegúrate de tener SQLite instalado.
+    - Crea un archivo de base de datos (`db.sqlite`) en la carpeta `src/utils/`.
+    - Ejecuta las migraciones de la base de datos (si las tienes).
+
+4.  **Inicia el servidor de desarrollo:**
+
+    ```bash
+    npm run dev
+    ```
+
+    o
+
+    ```bash
+    yarn dev
+    ```
+
+5.  **Construye para producción:**
+
+    ```bash
+    npm run build
+    ```
+
+    o
+
+    ```bash
+    yarn build
+    ```
+
+6.  **Inicia el servidor en producción (con Node.js):**
+
+    ```bash
+    node dist/server/entry.mjs
+    ```
+
+## Despliegue
+
+Este proyecto se puede desplegar en:
+
+- **Netlify:** Configura el adaptador de Netlify y conecta tu repositorio de Git.
+- **Vercel:** Configura el adaptador de Vercel y conecta tu repositorio de Git.
+- **Servidor Node.js:** Utiliza el adaptador de Node.js y despliega la carpeta `dist`.
+
+## Información Importante
+
+- **Variables de entorno:** Si utilizas variables de entorno, asegúrate de configurarlas correctamente en tu entorno de desarrollo y producción.
+- **Seguridad:** En un entorno de producción, utiliza variables de entorno para almacenar contraseñas y otros datos sensibles.
+- **Base de datos:** Asegúrate de que la base de datos esté configurada correctamente y que las migraciones estén actualizadas.
+
+## Próximas Mejoras
+
+- Agregar pruebas unitarias y de integración.
+- Implementar
