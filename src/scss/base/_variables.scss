@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Fuentes
+$fuente_principal: 'Comfortaa', sans-serif;
+$fuente_secundaria:  'Raleway', sans-serif;
+
+// Tamaños fuentes e iconos
+
+$xxxl: 6.4rem ;
+$xxl: 5.6rem ;
+$xl: 4rem ;
+$grande: 3.2rem ;
+$mediano: 2.4rem;
+$base:1.6rem ;
+
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colores
+$negro: #000000;
+$amarillo: #E08709;;
+$verde: #71B100;
+$blanco: #FFFFFF;
+$gris: #e1e1e1;
+$grisOscuro: #333333;
+
+$separacion: 5rem;
+
+// Fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900

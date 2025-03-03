@@ -1,0 +1,42 @@
+.tituloSeccion{
+    font-size: 3.2rem;
+    font-weight: $bold;
+    text-align: left;
+}
+
+@include tablet{
+    .contenedor-cursos{
+        @include grid(3, 2rem);
+    }
+}
+
+.curso{
+    background-color: lighten($gris, 7);
+    border: 1px solid darken($gris, 2);
+    border-radius: 1.2rem;
+
+    h3, p {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    h3{
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
+
+.contenido-curso{
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.imagen-curso{
+    border-radius: 1.2rem 1.2rem 0 0 ;
+}

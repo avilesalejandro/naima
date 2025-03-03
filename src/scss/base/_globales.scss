@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $fuente_principal;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+p {
+    color: $negro;
+    font-size: 1.6rem;
+}
+.contenedor {
+    width: 90%;
+    max-width: 118rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: $fuente_principal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color:white;
+}
+
+.text-xxxl{
+    font-size: $xl;
+}
+
+.py-xl{
+    padding-top: 3.2rem ;
+    padding-bottom: 3.2rem ;
+}
