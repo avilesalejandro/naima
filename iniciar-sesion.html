@@ -20,7 +20,6 @@
                     <a href="/nosotros.html">Nosotros</a>
                     <a href="/cursos.html">Cursos</a>
                     <a href="/contacto.html">Contacto</a>
-                    <a href="/iniciar-sesion.html">Iniciar Sesión</a>
                 </nav>
             </div> <!-- .barra -->
         </div>
@@ -28,7 +27,20 @@
 
     <main class="contenedor seccion py-xl" id="cursos">
         
-        <h1>Página de contacto</h1>
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+        </div>
 
     </main>
 

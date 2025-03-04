@@ -40,6 +40,9 @@
         font-weight: 400;
         line-height: 2;
         max-width: 55rem;
+        @include tablet{
+            max-width: 65rem;
+        }
     }
 }
 
@@ -47,4 +50,9 @@
     font-family: $fuente_secundaria;
     font-size: 3.2rem ;
     font-weight: $black;
+    
+    @include tablet{
+        font-size: 4.8rem;
+
+    }
 }

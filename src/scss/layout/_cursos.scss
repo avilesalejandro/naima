@@ -6,7 +6,13 @@
 
 @include tablet{
     .contenedor-cursos{
-        @include grid(3, 2rem);
+        @include grid(1, 2rem);
+        @include tablet{
+            @include grid( 2 , 1.6rem );
+        }
+        @include desktop{
+            @include grid(3, 2.4rem);
+        }
     }
 }
 
