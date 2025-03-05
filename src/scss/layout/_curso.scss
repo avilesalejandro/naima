@@ -1,0 +1,41 @@
+.curso{
+    iframe{
+       height: 40rem;
+       border-radius: 4rem;
+        
+       @include tablet{
+        height: 56rem;
+        border-radius: 5.6rem;
+       }
+    }
+    border-radius: 5.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.boton-siguiente{
+    width: 100%; 
+    text-align: right;
+    margin: 3.2rem 0 0 0;
+    
+    @include tablet{
+        margin: 4rem 0 0 0;
+    }
+    
+    a{
+        background-color: $azul;
+         margin-top: 2.4rem;
+         text-align: right;
+         padding: 1.8rem 1.6rem;
+         border-radius: .6rem;
+         color: $blanco;
+         font-weight: 900;
+        
+        &:hover{
+            border-radius: .8rem;
+            background-color: darken($azul, 4);
+        }
+
+
+    }
+}
