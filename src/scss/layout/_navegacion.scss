@@ -45,5 +45,41 @@
             border-radius: .8rem;
         }
     } 
- 
+}
+
+.navegacion-footer{
+    margin-top: 3.2rem;
+    @include tablet {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+    a{
+        color: $blanco;
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        display: block;
+        text-align: center;
+        &:hover{
+            text-decoration: underline;
+        }
+        @include tablet{
+            margin-right: 2rem;
+            margin-bottom: 0;
+            font-size: 1.8rem;
+        }
+    }
+  
+    .boton-iniciar-sesion{
+        background-color: $azul;
+        width: fit-content;
+        text-decoration: none;
+    } 
+}
+
+footer{
+    .boton-iniciar-sesion{
+        margin: 0;
+    }
 }
