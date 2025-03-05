@@ -10,13 +10,11 @@
 
 .navegacion{
     margin-top: 3.2rem;
-
     @include tablet {
         display: flex;
         align-items: center;
         margin-top: 0;
     }
-
     a{
         color: $blanco;
         text-decoration: none;
@@ -31,18 +29,21 @@
             margin-right: 2rem;
             margin-bottom: 0;
             font-size: 1.8rem;
-            &:last-of-type{
-                border-radius: .5rem;
-                margin-right: 0;
-                padding: 1rem 2rem;
-                color: $blanco;
-                background-color: $azul;        
-                &:hover{
-                    text-decoration: none;
-                    background-color: darken($azul, 5);
-                }
-            }
-          
         }
     }
+  
+    .boton-iniciar-sesion{
+        background-color: $azul;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        border-radius: .4rem;
+        text-decoration: none;
+        &:hover{
+            background-color: darken($azul, 7);
+            text-decoration: none;
+            border-radius: .8rem;
+        }
+    } 
+ 
 }
