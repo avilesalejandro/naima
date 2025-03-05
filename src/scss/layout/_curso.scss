@@ -42,4 +42,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a{
+        background-color: $azul;
+        color: $blanco;
+        font-family: $fuente_secundaria;
+        font-weight: 600;
+        padding: 1.2rem 2.4rem;
+        border-radius: .6rem;
+        &:hover{
+            background-color: darken($azul, 3);
+        }
+    }
 }

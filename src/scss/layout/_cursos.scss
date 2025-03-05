@@ -4,20 +4,45 @@
     text-align: left;
 }
 
-@include tablet{
-    .contenedor-cursos{
-        @include grid(1, 2rem);
+.contenedor-cursos{
+    @include grid(1, 2rem);
+    @include tablet{
+        @include grid( 2 , 1.6rem );
+    }
+    @include desktop{
+        @include grid(3, 2.4rem);
+    }
+    gap: 4.2rem;
+}
+
+
+
+#cursos{
+    padding: 10rem 0;
+
+    h1{
+        font-family: $fuente_secundaria;
+        color: darken($azul, 8);
+        line-height: 1.4;
+        margin-top: 0;
+    }
+
+    h2{
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-weight: 900;
+        font-family: $fuente_secundaria;
+        color: lighten($azul, 1);
+        text-align: left;
+        font-size: 3.2rem;
         @include tablet{
-            @include grid( 2 , 1.6rem );
-        }
-        @include desktop{
-            @include grid(3, 2.4rem);
+            font-size: 4rem;
         }
     }
 }
 
 .cursoCard{
-    background-color: lighten($gris, 7);
+    background-color: lighten($gris, 11);
     border: 1px solid darken($gris, 2);
     border-radius: 1.2rem;
 
@@ -28,11 +53,20 @@
         text-align: left;
     }
     h3{
-        font-size: 2.4rem;
+        font-size: 2.6rem;
+        font-weight: 900;
+        font-family: $fuente_secundaria;
+        color: darken($azul, 6);
     }
     p{
         font-size: 1.6rem;
+        color: darken($azul, 2);
     }
+
+    &:hover{
+        background-color: lighten($gris, 8);
+    }
+
 }
 
 .contenido-curso{
