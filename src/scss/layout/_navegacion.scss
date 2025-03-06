@@ -11,10 +11,16 @@
 
 .navegacion{
     margin-top: 3.2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear ;
+
     @include tablet {
         display: flex;
         align-items: center;
         margin-top: 0;
+        opacity: 1;
+        visibility: visible;
     }
     a{
         color: $blanco;
@@ -83,4 +89,30 @@ footer{
     .boton-iniciar-sesion{
         margin: 0;
     }
+}
+
+/* Menu de hamburguesa */
+
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+
+    img{
+        width: 5rem;
+        margin-top: 2.4rem;
+    }
+
+}
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+}
+
+h3{
+    text-align: left;
+    font-family: $fuente_secundaria;
+    font-weight: 900;
+    color: rgb(68, 68, 68);
 }
