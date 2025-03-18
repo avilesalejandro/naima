@@ -4,10 +4,40 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <section class="py-20">
-    <div class="">
-      <h1 class="text-center text-3xl font-semibold">
-        Nuestros Cursos en Linea
-      </h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-11/12 max-w-screen-xl mx-auto"
+    >
+      <div class="">
+        <!-- TODO: AGREGAR AQUI VIDEO DEL CURSO -->
+        <h2 class="text-3xl font-bold uppercase">Bienvenida a Naima</h2>
+        <iframe
+          src="https://www.youtube.com/embed/MYAfqQxN-ao?si=AZAlfSGhsdZ-ZX6W&controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full rounded-lg h-72"></iframe>
+      </div>
+      <div class="">
+        <!-- TODO: AGREGAR AQUI DESCRIPCION Y TEXTO DEL CURSO -->
+
+        <h4>Introducción al curso</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          voluptatum excepturi voluptatibus voluptates quisquam culpa quidem
+          obcaecati ex quia ab!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-sky-50 py-20">
+    <div class="w-11/12 mx-auto max-w-screen-xl flex flex-col">
+      <h3 class="text-xl">Nuestras Redes Sociales</h3>
+      <a href="#" class="">Instagram</a>
+      <a href="#" class="">Facebook</a>
+      <a href="#" class="">WhatsApp</a>
     </div>
   </section>
 </Layout>
