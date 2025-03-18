@@ -6,33 +6,35 @@ import RedesSociales from "../components/RedesSociales.astro";
 <Layout>
   <section class="pt-10">
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-10/12 max-w-screen-xl mx-auto"
+      class="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-10/12 max-w-screen-xl mx-auto gap-x-4 bg-azul-50/20 px-8 rounded-lg shadow shadow-azul-50/20"
     >
-      <h2
-        class="text-5xl uppercase font-black lg:col-span-2 text-azul-600 md:mt-6 leading-snug"
-      >
-        Curso de resina UV
-      </h2>
-      <h4 class="font-bold text-azul-700/60 lg:col-span-2 md:mt-2">
-        Modalidad: En línea
-      </h4>
+      <div class="lg:col-span-2">
+        <h2
+          class="text-5xl uppercase font-black text-azul-600 md:mt-6 leading-snug"
+        >
+          Curso de resina UV
+        </h2>
+        <h4 class="font-bold text-azul-700/60 md:mt-2 lg:mt-0">
+          Modalidad: En línea
+        </h4>
+      </div>
 
-      <div class="">
+      <div class="lg:mt-6">
         <!-- TODO: AGREGAR AQUI VIDEO DEL CURSO -->
         <iframe
           src="https://www.youtube.com/embed/0gzmFo8UiJQ?si=I1r3f64pJip5fvs3&controls=0"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
-          class="w-full rounded-lg h-72 md:h-96 mt-6"
+          class="w-full rounded-lg h-72 md:h-96 mt-6 lg:mt-0"
           allowfullscreen></iframe>
       </div>
 
-      <div class="mt-8 md:mt-14 bg-azul-50/20 px-4 py-6 rounded-lg">
+      <div class="mt-8 md:mt-14 lg:mt-0 px-4 py-6 rounded-lg">
         <!-- TODO: AGREGAR AQUI DESCRIPCION Y TEXTO DEL CURSO -->
 
         <h3 class="text-2xl font-bold text-azul-700">Introducción al curso</h3>
-        <p class="font-medium mt-4 text-azul-700">
+        <p class="font-medium mt-2 text-azul-700">
           En este video podrás conocer la lista de materiales, herramientas y
           los primeros pasos que vamos a tomar en la elaboración de nuestras
           primeras piezas de resina 🤩.
