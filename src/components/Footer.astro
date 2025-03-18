@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import LogoNaima from "../assets/logo-naima.svg";
 ---
 
-<footer class="bg-white shadow-sm dark:bg-[#6B878E] w-full">
+<footer class="bg-azul-500 shadow-sm w-full">
   <div class="max-w-screen-xl mx-auto p-4 md:py-8">
     <div class="sm:flex sm:items-center sm:justify-between">
       <a
@@ -13,20 +13,17 @@ import LogoNaima from "../assets/logo-naima.svg";
         <Image src={LogoNaima} alt="Naima Casa Productora" class="" />
       </a>
       <ul
-        class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-200"
+        class="flex flex-wrap items-center mb-6 mt-3 lg:mt-0 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-200"
       >
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Nosotros</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline me-4 md:me-6">Cursos</a>
-        </li>
         <li>
           <a href="#" class="hover:underline me-4 md:me-6">Contáctanos</a>
         </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Iniciar Sesión</a>
+        </li>
       </ul>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-[#6c7a7d] lg:my-8" />
+    <hr class="my-6 border-azul-300 sm:mx-auto lg:my-8" />
     <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-200"
       >© 2025 <a href="/" class="hover:underline">Naima Casa Productora</a>.
       Todos los derechos reservados.</span

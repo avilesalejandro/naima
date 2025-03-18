@@ -1,3 +1,34 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @source "../../node_modules/flowbite";
+
+@theme {
+  --color-azul: oklch(60.42% 0.03359 214.66);
+  --color-azul-50: oklch(88.82% 0.01013 212.52);
+  --color-azul-100: oklch(85.624% 0.0127 215.83);
+  --color-azul-200: oklch(79.642% 0.01812 210.19);
+  --color-azul-300: oklch(73.378% 0.02343 214.45);
+  --color-azul-400: oklch(66.893% 0.02949 213.87);
+  --color-azul-500: oklch(60.42% 0.03359 214.66);
+  --color-azul-600: oklch(50.48% 0.02739 213.08);
+  --color-azul-700: oklch(39.764% 0.02023 215.73);
+  --color-azul-800: oklch(28.54% 0.01302 212.66);
+  --color-azul-900: oklch(15.722% 0.00394 229.1);
+  --color-azul-950: oklch(0% 0 none);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h4,
+a,
+p {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
