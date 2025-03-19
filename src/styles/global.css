@@ -19,7 +19,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+button {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -29,7 +30,8 @@ h4,
 a,
 p,
 li,
-span {
+span,
+label {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
