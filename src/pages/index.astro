@@ -4,7 +4,7 @@ import RedesSociales from "../components/RedesSociales.astro";
 ---
 
 <Layout>
-  <section class="pt-10">
+  <section class="py-10">
     <div
       class="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-10/12 max-w-screen-xl mx-auto gap-x-4 bg-azul-50/20 px-8 rounded-lg shadow shadow-azul-50/20 py-6"
     >
@@ -96,20 +96,36 @@ import RedesSociales from "../components/RedesSociales.astro";
         <h5 class="text-2xl font-bold text-azul-600 mt-6">
           Déjanos un mensaje
         </h5>
-        <form class="flex flex-col mt-4">
-          <div class="flex flex-col">
-            <label for="">Nombre</label>
+        <form class="flex flex-col mt-4 items-end">
+          <div class="flex flex-col w-full">
+            <label
+              for=""
+              class="font-montserrat font-medium text-lg text-azul-700"
+              >Nombre</label
+            >
             <input type="text" name="" id="" />
           </div>
-          <div class="flex flex-col mt-3">
-            <label for="">Correo</label>
+          <div class="flex flex-col w-full mt-3">
+            <label
+              for=""
+              class="font-montserrat font-medium text-lg text-azul-700"
+              >Correo</label
+            >
             <input type="email" name="" id="" />
           </div>
-          <div class="flex flex-col mt-3">
-            <label for="">Mensaje</label>
+          <div class="flex flex-col w-full mt-3">
+            <label
+              for=""
+              class="font-montserrat font-medium text-lg text-azul-700"
+              >Mensaje</label
+            >
             <textarea name="" id=""></textarea>
           </div>
-          <a href="#">Enviar Mensaje</a>
+          <a
+            href="#"
+            class="bg-azul-700 text-white font-semibold py-3 max-w-fit px-5 rounded-md mt-3"
+            >Enviar Mensaje</a
+          >
         </form>
       </div>
     </div>
