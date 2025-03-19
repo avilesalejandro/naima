@@ -8,7 +8,7 @@ import RedesSociales from "../components/RedesSociales.astro";
     <div
       class="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-10/12 max-w-screen-xl mx-auto gap-x-4 bg-azul-50/20 px-8 rounded-lg shadow shadow-azul-50/20 py-6"
     >
-      <div class="lg:col-span-2">
+      <div class="md:col-span-2 lg:col-span-2">
         <h2
           class="text-2xl uppercase font-black text-azul-600 md:mt-6 leading-snug"
         >
@@ -19,10 +19,11 @@ import RedesSociales from "../components/RedesSociales.astro";
         </h4>
       </div>
 
-      <div class="lg:mt-6">
+      <div class="lg:mt-6 md:col-span-2 lg:col-span-1">
         <iframe
-          src="https://www.youtube.com/embed/0gzmFo8UiJQ?si=I1r3f64pJip5fvs3&controls=0"
+          src="https://www.youtube.com/embed/0gzmFo8UiJQ?si=mxW77mAqGtqZJo-G"
           title="YouTube video player"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           class="w-full rounded-lg h-72 md:h-96 mt-6 lg:mt-0"
@@ -31,7 +32,9 @@ import RedesSociales from "../components/RedesSociales.astro";
 
       <div class="mt-8 md:mt-14 lg:mt-0 lg:px-4 py-6 rounded-lg">
         <h3 class="text-2xl font-bold text-azul-700">Resumen</h3>
-        <p class="font-medium mt-2 text-azul-700">
+        <p
+          class="font-medium font-montserrat mt-2 text-azul-700 tracking-wide leading-loose"
+        >
           En este video podrás conocer la lista de materiales, herramientas y
           los primeros pasos que vamos a tomar en la elaboración de nuestras
           primeras piezas de resina 🤩.
@@ -44,7 +47,9 @@ import RedesSociales from "../components/RedesSociales.astro";
         <h3 class="text-2xl font-bold text-azul-700 mt-12">
           Lista de materiales
         </h3>
-        <ul class="font-bold text-azul-700 space-y-3 pl-3 mt-5">
+        <ul
+          class="font-medium font-montserrat text-azul-700 space-y-3 pl-3 mt-5"
+        >
           <li>💧 Resina</li>
           <li>💡 Lámpara</li>
           <li>🖌️ Set de brochas</li>
@@ -52,7 +57,9 @@ import RedesSociales from "../components/RedesSociales.astro";
         </ul>
 
         <h3 class="text-2xl font-bold text-azul-700 mt-12">Sugerencias</h3>
-        <ul class="font-bold text-azul-700 space-y-3 pl-3 mt-5">
+        <ul
+          class="font-medium font-montserrat text-azul-700 space-y-3 pl-3 mt-5 tracking-wide leading-loose"
+        >
           <li>🪟 Abre puertas o ventanas para una mejor ventilación.</li>
           <li>
             🎶 Música Relajante, crea un ambiente donde puedas disfrutar de tu
@@ -61,8 +68,52 @@ import RedesSociales from "../components/RedesSociales.astro";
           <li>🤫 Reduce las distracciones a tu alrededor.</li>
         </ul>
       </div>
+
+      <div class="border-t-1 border-azul-50 md:col-span-2">
+        <h4 class="mt-10 font-bold font-montserrat text-2xl text-azul-700">
+          ¿Tienes alguna duda?
+        </h4>
+      </div>
+      <div class="flex flex-col md:col-span-2 lg:col-span-1">
+        <!-- TODO: AGREGAR BOTONES DE REDES -->
+        <h5 class="text-2xl font-bold text-azul-600 mt-6">Síguenos en redes</h5>
+        <a
+          href="https://www.instagram.com/naimacirculodemujeres/"
+          target="_blank"
+          class="bg-gradient-to-r from-instagram-yellow via-10% via-instagram-orange via-instagram-red via-instagram-pink to-instagram-purple text-white font-bold py-2 px-4 rounded max-w-fit"
+        >
+          <i class="fa-brands fa-instagram mr-1"></i> Naima Círculo de Mujeres</a
+        >
+        <a
+          href="https://www.instagram.com/naimacirculodemujeres/"
+          target="_blank"
+          class="bg-green-700 text-white hover:bg-green-800 rounded-sm hover:rounded-md py-3 px-5 mt-3 max-w-fit"
+          ><i class="fa-brands fa-whatsapp mr-2"></i>Enviar WhatsApp a naima</a
+        >
+      </div>
+      <div class="flex flex-col md:col-span-2 lg:col-span-1 mt-12 md:mt-0">
+        <!-- TODO: AGREGAR TAL VEZ FOTO -->
+        <h5 class="text-2xl font-bold text-azul-600 mt-6">
+          Déjanos un mensaje
+        </h5>
+        <form class="flex flex-col mt-4">
+          <div class="flex flex-col">
+            <label for="">Nombre</label>
+            <input type="text" name="" id="" />
+          </div>
+          <div class="flex flex-col mt-3">
+            <label for="">Correo</label>
+            <input type="email" name="" id="" />
+          </div>
+          <div class="flex flex-col mt-3">
+            <label for="">Mensaje</label>
+            <textarea name="" id=""></textarea>
+          </div>
+          <a href="#">Enviar Mensaje</a>
+        </form>
+      </div>
     </div>
   </section>
 
-  <RedesSociales />
+  <!-- <RedesSociales /> -->
 </Layout>

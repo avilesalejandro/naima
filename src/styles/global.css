@@ -15,24 +15,11 @@
   --color-azul-800: oklch(28.54% 0.01302 212.66);
   --color-azul-900: oklch(15.722% 0.00394 229.1);
   --color-azul-950: oklch(0% 0 none);
-}
-
-h1,
-h2,
-h3,
-button {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-h4,
-a,
-p,
-li,
-span,
-label {
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  --color-instagram-yellow: oklch(88.16% 0.15 89.26);
+  --color-instagram-orange: oklch(69.83% 0.2 42.44);
+  --color-instagram-red: oklch(53.25% 0.23 2.16);
+  --color-instagram-pink: oklch(48.27% 0.2 331.79);
+  --color-instagram-purple: oklch(40.21% 0.16 295.58);
+  --font-montserrat: "Montserrat", "sans-serif";
+  --font-comfortaa: "Comfortaa", "sans-serif";
 }
