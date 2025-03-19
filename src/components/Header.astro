@@ -3,6 +3,20 @@ import { Image } from "astro:assets";
 import LogoNaima from "../assets/logo-naima.svg";
 ---
 
+<header class="bg-azul-500 py-8">
+  <div
+    class="w-11/12 mx-auto flex items-center justify-between max-w-screen-xl"
+  >
+    <Image src={LogoNaima} alt="Logo Naima" class="" />
+    <a
+      href="#"
+      class="bg-azul-600 hover:bg-azul-700 p-3 rounded-sm hover:rounded-md text-white"
+      >Contáctanos</a
+    >
+  </div>
+</header>
+
+<!-- 
 <header>
   <nav class="border-gray-200 bg-azul-500">
     <div
@@ -56,4 +70,4 @@ import LogoNaima from "../assets/logo-naima.svg";
       </div>
     </div>
   </nav>
-</header>
+</header> -->
