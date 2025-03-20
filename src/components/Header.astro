@@ -3,14 +3,14 @@ import { Image } from "astro:assets";
 import LogoNaima from "../assets/logo-naima.svg";
 ---
 
-<header class="bg-azul-500 py-8 md:px-12">
+<header class="py-8 bg-azul-500 md:px-12">
   <div
-    class="w-11/12 mx-auto flex items-center justify-between max-w-screen-xl"
+    class="flex items-center justify-between w-11/12 mx-auto max-w-screen-xl"
   >
     <Image src={LogoNaima} alt="Logo Naima" class="" />
     <a
       href="#"
-      class="bg-azul-600 hover:bg-azul-700 p-3 rounded-sm hover:rounded-md text-white"
+      class="p-3 text-white rounded-sm bg-azul-600 hover:bg-azul-700 hover:rounded-md"
       >Contáctanos</a
     >
   </div>
@@ -20,7 +20,7 @@ import LogoNaima from "../assets/logo-naima.svg";
 <header>
   <nav class="border-gray-200 bg-azul-500">
     <div
-      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8 md:w-10/12 w-11/12"
+      class="flex flex-wrap items-center justify-between w-11/12 py-8 mx-auto max-w-screen-xl md:w-10/12"
     >
       <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <Image src={LogoNaima} alt="Naima Casa Productora" class="" />
@@ -28,7 +28,7 @@ import LogoNaima from "../assets/logo-naima.svg";
       <button
         data-collapse-toggle="navbar-default"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-azul-50 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-azul-600 hover:bg-azul-600"
+        class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm rounded-lg text-azul-50 md:hidden focus:outline-none focus:ring-2 focus:ring-azul-600 hover:bg-azul-600"
         aria-controls="navbar-default"
         aria-expanded="false"
       >
@@ -50,12 +50,12 @@ import LogoNaima from "../assets/logo-naima.svg";
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 gap-y-2 text-white text-lg"
+          class="flex flex-col p-4 mt-4 text-lg font-medium text-white rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 gap-y-2"
         >
           <li>
             <a
               href="#"
-              class="block py-2 px-3 rounded-sm md:border-0 text-center"
+              class="block px-3 py-2 text-center rounded-sm md:border-0"
               >Contáctanos</a
             >
           </li>
