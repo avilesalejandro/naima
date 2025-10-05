@@ -9,19 +9,25 @@ import ImagenCurso from "../assets/imagen-curso.jpg";
     <h1 class="mb-10 text-3xl font-semibold text-center text-azul-600">
       Conoce nuestros cursos disponibles
     </h1>
-    <div class="grid grid-cols-2 md:grid-cols-7 lg:grid-cols-12 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-6">
       <a
         href="/curso-resina-uv/clase-1"
-        class="rounded-md shadow-md hover:shadow-lg"
+        class="rounded-md shadow-md hover:shadow-lg md:col-span-3 lg:col-span-4"
       >
         <Image src={ImagenCurso} alt="imagen curso" class="rounded-t-md" />
         <p class="p-3 text-lg font-bold text-azul-600">Curso resina UV 1</p>
       </a>
-      <a href="#" class="rounded-md shadow-md hover:shadow-lg">
+      <a
+        href="#"
+        class="rounded-md shadow-md hover:shadow-lg md:col-span-3 lg:col-span-4"
+      >
         <Image src={ImagenCurso} alt="imagen curso" class="rounded-t-md" />
         <p class="p-3 text-lg font-bold text-azul-600">Curso resina UV 2</p>
       </a>
-      <a href="#" class="rounded-md shadow-md hover:shadow-lg">
+      <a
+        href="#"
+        class="rounded-md shadow-md hover:shadow-lg md:col-span-3 lg:col-span-4"
+      >
         <Image src={ImagenCurso} alt="imagen curso" class="rounded-t-md" />
         <p class="p-3 text-lg font-bold text-azul-600">Curso resina UV 3</p>
       </a>
